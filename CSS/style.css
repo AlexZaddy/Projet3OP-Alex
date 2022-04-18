@@ -1,69 +1,177 @@
-/**
-Cible
-Classes moyennes et supérieures, connectées et souvent pressées, souhaitant déguster des
-produits de qualité.
-Identité graphique
-Polices
-Logo et titres: Shrikhand
-Texte: Roboto
-Couleurs
-Primaire Secondaire Tertiaire
-#9356DC #FF79DA #99E2D0*/
-.flex{
-    display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
 }
-.block{
-    display: block;
+
+.flex {
+  display: flex;
 }
-.justifyCont{
-    justify-content: center;
+
+.block {
+  display: block;
 }
-.textAlign{
-    text-align: center;
+
+.justifyCont {
+  justify-content: center;
 }
-.flexCol{
-    flex-direction: column;
+
+.textAlign {
+  text-align: center;
 }
-.alignItems{
-    align-items: center;
+
+.flexCol {
+  flex-direction: column;
 }
-.spaceBetween{
-    justify-content: space-between;
+
+.alignItems {
+  align-items: center;
 }
-/*-------------------------------------------------*/
-header{
-    box-shadow:  0px 1px 3px 0px black;
+
+.spaceBetween {
+  justify-content: space-between;
 }
-.img-logo{
-    margin: auto;
-    padding: 5px;
+
+.plat {
+  font-weight: 800;
 }
-h2{
-    font-size: 24px;
+
+.grid {
+  display: grid;
 }
-.num{
-    color:white;
-    background-color: #9356DC;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
+
+.justifyItem {
+  justify-items: center;
 }
-.cardEtape{
-    box-shadow:  0px 1px 5px 0px rgba(0, 0, 0, 0.488);
-    width: 90%;
-    padding: 15px 0;
-    margin-bottom:9px;
-    border-radius: 15px;
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5%;
+  font-family: "Roboto", sans-serif;
 }
-img{
-    width: 100%;
-    object-fit: cover;
+
+/*-----------------------------------------------------------------------*/
+header {
+  width: 100%;
+  box-shadow: 0px 1px 3px 0px black;
+  padding: 10px 0;
 }
-.CardResto{
-    width: 90%;
-    border-radius: 20px;
-    overflow: hidden;
+header img {
+  margin: auto;
+  width: 35%;
+  display: block;
 }
-.info{
-    padding: 5px;
+
+.section-1 {
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.488);
+  margin-bottom: 8%;
 }
+.section-1 div {
+  width: 70%;
+  padding-top: 5%;
+}
+.section-1 div p {
+  padding: 2% 0;
+  font-family: "Roboto", sans-serif;
+}
+.section-1 div p:first-child {
+  font-weight: bold;
+  font-size: 22px;
+  width: 75%;
+  margin: 0 auto;
+}
+.section-1 div p:last-child {
+  color: #7a7a7a;
+  margin-bottom: 6%;
+}
+.section-1 button {
+  width: 35%;
+  color: white;
+  font-size: 10px;
+  background: linear-gradient(20deg, #FF79DA, #9356DC);
+  border-radius: 15px;
+  padding: 2% 0;
+  border: none;
+  margin-bottom: 7%;
+}
+
+.section-2 {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.localisation {
+  padding: 3% 0;
+  background-color: #c6c6c6;
+  width: 100%;
+}
+
+.num {
+  color: white;
+  background-color: #9356dc;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: relative;
+  right: 2%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cardEtape {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  padding: 15px 0;
+  margin-bottom: 9px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 5% 0;
+  margin-bottom: 4%;
+  font-family: "Roboto", sans-serif;
+}
+
+.picto-New {
+  background: #99E2D0;
+  color: rgb(36, 152, 36);
+  border-radius: 3px;
+  padding: 1% 2%;
+  position: absolute;
+  right: 9%;
+  bottom: 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardEtape:hover {
+  transition: 300ms;
+  background-color: rgba(146, 86, 220, 0.1764705882);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.CardResto {
+  width: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.info {
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.etape {
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
