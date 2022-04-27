@@ -1,0 +1,61 @@
+$violet:#9356DC;
+$rose:#FF79DA;
+$vert:#99E2D0;
+
+
+/*-----------------------------------------------------------------------*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.justifyCont {
+    justify-content: center;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.flexCol {
+    flex-direction: column;
+}
+
+.alignItems {
+    align-items: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.plat {
+    font-weight: 800;
+}
+
+.grid {
+    display: grid;
+}
+
+.justifyItem {
+    justify-items: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.margin5 {
+    margin: 5%;
+}
