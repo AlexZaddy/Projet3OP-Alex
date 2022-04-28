@@ -1,3 +1,4 @@
+/*-----------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
 * {
   font-family: "Roboto", sans-serif;
@@ -50,7 +51,10 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
-/*-----------------------------------------------------------------------*/
+.margin5 {
+  margin: 5%;
+}
+
 header {
   width: 100%;
   box-shadow: 0px 1px 3px 0px black;
@@ -116,10 +120,6 @@ header img {
   position: relative;
   right: 2%;
   font-family: "Roboto", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
 .cardEtape {
@@ -172,6 +172,16 @@ img {
 .etape {
   font-weight: 600;
   font-family: "Roboto", sans-serif;
+}
+
+.menuContainer {
+  width: 100%;
+}
+.menuContainer div {
+  border-radius: 11px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  margin: 3% 2%;
+  padding: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */
