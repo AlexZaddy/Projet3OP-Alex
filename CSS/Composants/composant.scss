@@ -8,3 +8,50 @@
         padding: 3%;
     }
 }
+
+.grandCard {
+    border-radius: 40px;
+    padding-bottom: 4%;
+    position: absolute;
+    top: 37%;
+    background: white;
+    z-index: 1;
+    width: 100%;
+
+}
+
+main {
+
+
+    div {
+        position: relative;
+        z-index: -1;
+    }
+}
+
+
+.namePlat {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.accompagnement {
+    font-size: smaller;
+    color: #383838;
+}
+
+.prix {
+    font-size: large;
+    font-weight: bold;
+}
+
+button {
+    width: 35%;
+    color: white;
+    font-size: 10px;
+    background: linear-gradient(20deg, $rose, $violet);
+    border-radius: 15px;
+    padding: 2% 0;
+    border: none;
+    margin-bottom: 7%;
+}

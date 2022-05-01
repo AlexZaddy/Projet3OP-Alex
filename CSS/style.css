@@ -51,8 +51,32 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
+hr {
+  width: 5%;
+  float: inline-start;
+  margin: 0px 9px;
+  color: #99E2D0;
+  border: 2px solid;
+}
+
+.title {
+  padding: 0% 2%;
+}
+
 .margin5 {
   margin: 5%;
+}
+
+.mb5 {
+  margin-bottom: 15%;
+}
+
+.center {
+  margin: 1% auto;
+}
+
+.marginA {
+  margin: auto;
 }
 
 header {
@@ -88,16 +112,6 @@ header img {
 .section-1 div p:last-child {
   color: #7a7a7a;
   margin-bottom: 6%;
-}
-.section-1 button {
-  width: 35%;
-  color: white;
-  font-size: 10px;
-  background: linear-gradient(20deg, #FF79DA, #9356DC);
-  border-radius: 15px;
-  padding: 2% 0;
-  border: none;
-  margin-bottom: 7%;
 }
 
 .section-2 {
@@ -182,6 +196,47 @@ img {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 3% 2%;
   padding: 3%;
+}
+
+.grandCard {
+  border-radius: 40px;
+  padding-bottom: 4%;
+  position: absolute;
+  top: 37%;
+  background: white;
+  z-index: 1;
+  width: 100%;
+}
+
+main div {
+  position: relative;
+  z-index: -1;
+}
+
+.namePlat {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.accompagnement {
+  font-size: smaller;
+  color: #383838;
+}
+
+.prix {
+  font-size: large;
+  font-weight: bold;
+}
+
+button {
+  width: 35%;
+  color: white;
+  font-size: 10px;
+  background: linear-gradient(20deg, #FF79DA, #9356DC);
+  border-radius: 15px;
+  padding: 2% 0;
+  border: none;
+  margin-bottom: 7%;
 }
 
 /*# sourceMappingURL=style.css.map */

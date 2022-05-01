@@ -57,6 +57,30 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
+hr {
+    width: 5%;
+    float: inline-start;
+    margin: 0px 9px;
+    color: #99E2D0;
+    border: 2px solid;
+}
+
+.title {
+    padding: 0% 2%;
+}
+
 .margin5 {
     margin: 5%;
+}
+
+.mb5 {
+    margin-bottom: 15%;
+}
+
+.center {
+    margin: 1% auto;
+}
+
+.marginA {
+    margin: auto;
 }
