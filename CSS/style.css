@@ -199,13 +199,16 @@ img {
 }
 
 .menuContainer {
-  width: 100%;
-}
-.menuContainer div {
   border-radius: 11px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 3% 2%;
   padding: 3%;
+}
+.menuContainer:hover {
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.menuContainer:hover .checked {
+  width: 10%;
 }
 
 .grandCard {
@@ -268,10 +271,6 @@ footer {
   border-radius: unset !important;
   margin: unset !important;
   padding: unset !important;
-}
-
-.checked:hover {
-  width: 10%;
 }
 
 aside {
