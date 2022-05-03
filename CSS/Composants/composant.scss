@@ -55,3 +55,32 @@ button {
     border: none;
     margin-bottom: 7%;
 }
+
+footer {
+    width: $width100;
+    background: #383838;
+    color: whitesmoke;
+}
+
+.arrow {
+    position: relative;
+    left: 4%;
+}
+
+.checked {
+    width: 0%;
+    background: $vert;
+    overflow: hidden;
+    box-shadow: none !important;
+    border-radius: unset !important;
+    margin: unset !important;
+    padding: unset !important;
+}
+
+.checked:hover {
+    width: 10%;
+}
+
+aside {
+    width: $width100;
+}
