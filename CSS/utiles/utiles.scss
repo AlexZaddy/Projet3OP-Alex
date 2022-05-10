@@ -1,6 +1,6 @@
-$violet:#9356DC;
-$rose:#FF79DA;
-$vert:#99E2D0;
+$violet: #9356DC;
+$rose: #FF79DA;
+$vert: #99E2D0;
 $width100: 100%;
 
 
@@ -93,4 +93,8 @@ hr {
     position: absolute;
     top: 180%;
     z-index: 1;
+}
+
+.cont-img {
+    height: 265px;
 }
