@@ -66,7 +66,7 @@ header {
 
 .cardEtape {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-    width: 380px;
+    width: 94%;
     padding: 20px 0;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.050);
@@ -80,7 +80,7 @@ header {
     border-radius: 3px;
     padding: 1% 2%;
     position: relative;
-    left: 290px;
+    left: 75%;
     bottom: 290px;
     font-family: "Roboto", sans-serif;
     width: 65px;
@@ -99,7 +99,7 @@ img {
 }
 
 .CardResto {
-    width: 390px;
+    width: 94%;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -119,4 +119,31 @@ img {
 
 .containerLogo {
     width: 500px;
+}
+
+@media screen and (min-width: 900px) {
+    .containe-sect1-2 {
+        display: flex;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-1 {
+        padding: 5% 0%;
+        background-color: white;
+        border-right: solid 1px #00000021
+    }
+
+    .cont-resto {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .CardResto {
+        width: 45%;
+        margin: 2% 2%;
+    }
+
+    .cardEtape {
+        width: 75%;
+    }
 }

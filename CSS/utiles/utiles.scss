@@ -6,7 +6,7 @@ $width100: 100%;
 
 /*-----------------------------------------------------------------------*/
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -54,7 +54,18 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     margin: 5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5%;
 }
 
 hr {
@@ -97,4 +108,28 @@ hr {
 
 .cont-img {
     height: 265px;
+}
+
+.Shrikhand {
+    font-family: 'Shrikhand', cursive;
+}
+
+.menu-footer {
+    width: $width100;
+    padding: 15px 0px;
+
+    div {
+        margin: 0% 5%;
+    }
+}
+
+.coontaineList {
+    li {
+        margin: 2% 5%;
+    }
+}
+
+a {
+    list-style: unset;
+    text-decoration: none;
 }
