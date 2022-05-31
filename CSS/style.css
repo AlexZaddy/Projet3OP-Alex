@@ -122,8 +122,23 @@ hr {
 }
 
 a {
-  list-style: unset;
+  list-style: none;
   text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:visited,
+a:link {
+  color: black;
+}
+
+header,
+section,
+.pixContainer,
+main,
+footer {
+  animation: ease-in 1.5s opacity;
 }
 
 header {
@@ -266,7 +281,7 @@ img {
   }
 }
 .menuContainer {
-  width: 100%;
+  width: 94%;
   border-radius: 11px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   padding: 3%;
@@ -274,14 +289,29 @@ img {
 }
 .menuContainer:hover {
   border-radius: 11px 0px 0px 11px;
+  transition: 1s;
+  cursor: pointer;
+}
+.menuContainer:hover .namePlat {
+  width: 27vh;
+  transition: 300ms;
+}
+.menuContainer:hover .accompagnement {
+  width: 27vh;
+  transition: 300ms;
+}
+
+.load {
+  opacity: 0;
+  animation: 1.5s ease-in load;
 }
 
 .containerInfo {
-  width: 100%;
+  width: 95%;
   border-radius: 11px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 3% 2%;
-  animation: 1s ease-in 0s 1 OnLoad;
+  animation: 2s ease-in 0s 1 OnLoad;
   transition: 1s;
 }
 .containerInfo:hover {
@@ -289,7 +319,7 @@ img {
   transition: 1s;
 }
 .containerInfo:hover .checked {
-  width: 20%;
+  width: 10vh;
   transition: 1s;
 }
 .containerInfo:hover .logoCheck {
@@ -303,7 +333,7 @@ img {
   padding: 5px;
   background-color: white;
   border-radius: 25px;
-  margin: 23%;
+  margin: 1.7vh;
   position: relative;
   left: 76px;
 }
@@ -351,12 +381,42 @@ button {
   border: none;
   margin-bottom: 7%;
   box-shadow: #383838 0px 3px 6px 0px;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.btn-valid-cmd {
+  font-size: 2rem;
+  font-weight: bolder;
+  transition: 200ms;
+}
+.btn-valid-cmd:hover {
+  box-shadow: #232323 0px 6px 16px 0px;
+  cursor: pointer;
+  transition: 200ms;
 }
 
 footer {
   width: 100%;
   background: #383838;
   color: whitesmoke;
+}
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited,
+footer a:link {
+  color: whitesmoke;
+}
+footer li {
+  display: flex;
+}
+footer li .fa-solid {
+  width: 2%;
+}
+footer li div {
+  margin: 0 !important;
+  margin-right: 10px !important;
 }
 
 .arrow {
@@ -375,8 +435,27 @@ footer {
   transition: 1s;
 }
 
+.btn-cmd {
+  padding-bottom: 0;
+}
+
 aside {
   width: 100%;
+}
+aside .cont-01 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+}
+aside .namePlat,
+aside .accompagnement {
+  text-overflow: ellipsis;
+  width: 85%;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: 200ms;
 }
 
 .test {
@@ -385,31 +464,95 @@ aside {
   background-color: red;
 }
 
-.heart-1 {
-  width: 24px;
-  height: 24px;
-  background: black;
-  clip-path: path("M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181");
-  transition: 1s;
+.cont-heart .heart-1 {
+  opacity: 0;
+  position: relative;
+  bottom: 50%;
+}
+.cont-heart:hover .heart-0 {
+  opacity: 0;
+  transition: 200ms;
+}
+.cont-heart:hover .heart-1 {
+  transition: 200ms;
+  opacity: 1;
 }
 
-.heart-1:hover {
-  width: 24px;
-  height: 24px;
-  background: linear-gradient(20deg, #FF79DA, #9356DC);
-  clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-  transition: 1s;
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  bottom: 60%;
+  left: 45%;
+  width: 180px;
+  height: 180px;
+  z-index: 1;
 }
 
-@media screen and (min-width: 900px) {
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 164px;
+  height: 164px;
+  margin: 8px;
+  border: 16px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@media screen and (min-width: 999px) {
+  .container-all-menu {
+    display: flex;
+    width: 99%;
+  }
   .container-all-menu section {
     margin: 0 auto;
   }
 
+  .grandCard {
+    padding-bottom: 10%;
+    position: unset;
+    top: 47%;
+    background: white;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .marginA {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
   #entre,
 #plat {
-    width: 35%;
+    width: 32.5%;
     margin: 5px;
+  }
+
+  .positionBottom {
+    position: unset;
+  }
+}
+@media screen and (max-width: 999px) {
+  .btn-valid-cmd {
+    position: absolute;
+    top: 170%;
+    z-index: 1;
+    font-size: 1rem;
+    right: 32%;
   }
 }
 @keyframes OnLoad {
@@ -423,6 +566,36 @@ aside {
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

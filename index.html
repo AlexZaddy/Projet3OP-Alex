@@ -13,6 +13,14 @@
     <title>Ohmyfood | accueil</title>
 </head>
 
+<!--div  chargement -->
+<div class="lds-ring load">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
 <body>
     <header>
         <div>
@@ -70,85 +78,101 @@
             <h4>Restaurants</h4>
 
             <div class="flex flexCol alignItems cont-resto">
-                <div class="CardResto">
-                    <div class="cont-img ">
-                        <img src="IMAGES/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
-                    </div>
-                    <div class="flex spaceBetween info">
-                        <div>
-                            <a href="./Ménilmontant.html">
+                <div class="CardResto"> <a href="./Ménilmontant.html">
+                        <div class="cont-img ">
+                            <img src="IMAGES/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex spaceBetween info">
+                            <div>
+
                                 <p class="plat">Pallette du Goût</p>
                                 <span>Ménilmontant</span>
-                            </a>
+
+                            </div>
+                            <div class="cont-heart">
+                                <div class=" heart-0">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-heart heart-1"></i>
+                            </div>
                         </div>
-                        <div>
-                            <div class="heart-1"></div>
+                        <div class="picto-New">
+                            <span>Nouveau</span>
                         </div>
-                    </div>
-                    <div class="picto-New">
-                        <span>Nouveau</span>
-                    </div>
+                    </a>
                 </div>
 
 
                 <div class="CardResto">
-                    <div class="cont-img ">
-                        <img src="IMAGES/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image resto">
-                    </div>
-                    <div class="flex spaceBetween info">
-                        <div>
-                            <a href="Charonne.html">
+                    <a href="Charonne.html">
+                        <div class="cont-img ">
+                            <img src="IMAGES/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image resto">
+                        </div>
+                        <div class="flex spaceBetween info">
+                            <div>
+
                                 <p class="plat">La note enchantée</p>
                                 <span>Charonne</span>
-                            </a>
+
+                            </div>
+                            <div class="cont-heart">
+                                <div class=" heart-0">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-heart heart-1"></i>
+                            </div>
                         </div>
-                        <div>
-                            <div class="heart-1"></div>
-                            <img src="" alt="">
+                        <div class="picto-New">
+                            <span>Nouveau</span>
                         </div>
-                    </div>
-                    <div class="picto-New">
-                        <span>Nouveau</span>
-                    </div>
+                    </a>
                 </div>
 
 
 
                 <div class="CardResto">
-                    <div class="cont-img ">
-                        <img src="IMAGES/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" srcset="">
-                    </div>
-                    <div class="flex spaceBetween info">
-                        <div>
-                            <a href="Menu_french.html">
+                    <a href="Menu_french.html">
+                        <div class="cont-img ">
+                            <img src="IMAGES/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex spaceBetween info">
+                            <div>
+
                                 <p class="plat">À la française</p>
                                 <span>Cité Rouge</span>
-                            </a>
+
+                            </div>
+                            <div class="cont-heart">
+                                <div class=" heart-0">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-heart heart-1"></i>
+                            </div>
                         </div>
-                        <div>
-                            <div class="heart-1"></div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
+                    </a>
                 </div>
 
 
                 <div class="CardResto">
-                    <div class="cont-img">
-                        <img src="IMAGES/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" srcset="">
-                    </div>
-                    <div class="flex spaceBetween info">
-                        <div>
-                            <a href="Mericourt.html">
+                    <a href="Mericourt.html">
+                        <div class="cont-img">
+                            <img src="IMAGES/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" srcset="">
+                        </div>
+                        <div class="flex spaceBetween info">
+                            <div>
+
                                 <p class="plat">Le Délice des sens</p>
                                 <span>Folie Mericourt</span>
-                            </a>
+
+                            </div>
+                            <div class="cont-heart">
+                                <div class=" heart-0">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <i class="fa-solid fa-heart heart-1"></i>
+                            </div>
                         </div>
-                        <div>
-                            <div class="heart-1"></div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
+                    </a>
                 </div>
 
 
@@ -161,10 +185,16 @@
                 <span class="Shrikhand">Ohmyfood</span>
             </div>
             <ul class="coontaineList menu-footer">
-                <li>proposer un restaurant</li>
-                <li>devenir partenaire</li>
+                <li>
+                    <div><i class="fa-solid fa-utensils"></i></div>proposer un restaurant
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-handshake-angle"></i></div>devenir partenaire
+                </li>
                 <li>mention legale</li>
-                <li>Contact</li>
+                <a href="mailto:OhmyFood@gmail.com">
+                    <li>Contact</li>
+                </a>
             </ul>
         </div>
     </footer>

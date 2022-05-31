@@ -13,6 +13,13 @@
 
     <title>Menu |Pallette du Goût</title>
 </head>
+<!--div  chargement -->
+<div class="lds-ring load">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
 
 <body>
     <header>
@@ -28,14 +35,18 @@
             </div>
         </div>
     </header>
+
     <div class="pixContainer">
         <img src="IMAGES/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
     </div>
     <section class="grandCard">
         <div class="flex spaceBetween">
             <h2>Pallette du Goût</h2>
-            <div class="margin5">
-                <div class="heart-1"></div>
+            <div class="margin5 cont-heart">
+                <div class=" heart-0">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <i class="fa-solid fa-heart heart-1"></i>
             </div>
         </div>
 
@@ -48,6 +59,7 @@
                     <div class="menuContainer flex">
 
                         <aside>
+
                             <span class="namePlat">Fricassée d'escargot</span>
                             <p class="flex spaceBetween">
                                 <span class=" accompagnement">Aux pimet d'espelette</span>
@@ -196,8 +208,8 @@
         </div>
 
     </section>
-    <div class="flex">
-        <button class="marginA">Commander</button>
+    <div class="flex btn-cmd ">
+        <button class="marginA btn-valid-cmd">Commander</button>
     </div>
 
     </section>
@@ -208,10 +220,16 @@
                 <span class="Shrikhand">Ohmyfood</span>
             </div>
             <ul class="coontaineList menu-footer">
-                <li>proposer un restaurant</li>
-                <li>devenir partenaire</li>
+                <li>
+                    <div><i class="fa-solid fa-utensils"></i></div>proposer un restaurant
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-handshake-angle"></i></div>devenir partenaire
+                </li>
                 <li>mention legale</li>
-                <li>Contact</li>
+                <a href="mailto:OhmyFood@gmail.com">
+                    <li>Contact</li>
+                </a>
             </ul>
         </div>
     </footer>

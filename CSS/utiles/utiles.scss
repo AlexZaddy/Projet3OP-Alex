@@ -130,6 +130,21 @@ hr {
 }
 
 a {
-    list-style: unset;
+    list-style: none;
     text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:visited,
+a:link {
+    color: black;
+}
+
+header,
+section,
+.pixContainer,
+main,
+footer {
+    animation: ease-in 1.5s opacity;
 }
