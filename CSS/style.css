@@ -88,17 +88,11 @@ hr {
 }
 
 .marginA {
-  margin: auto;
+  margin: 4% auto;
 }
 
 .Marge0auto {
   margin: 0 auto;
-}
-
-.positionBottom {
-  position: absolute;
-  top: 180%;
-  z-index: 1;
 }
 
 .cont-img {
@@ -293,11 +287,9 @@ img {
   cursor: pointer;
 }
 .menuContainer:hover .namePlat {
-  width: 27vh;
   transition: 300ms;
 }
 .menuContainer:hover .accompagnement {
-  width: 27vh;
   transition: 300ms;
 }
 
@@ -345,15 +337,25 @@ img {
 .grandCard {
   border-radius: 40px;
   padding-bottom: 4%;
-  position: absolute;
+  position: unset;
   top: 37%;
   background: white;
   z-index: 1;
   width: 100%;
 }
 
-main .pixContainer {
+.pixContainer {
   z-index: -1;
+}
+.pixContainer div {
+  position: relative;
+}
+
+.grandTitre {
+  border-radius: 20px;
+  background: white;
+  position: relative;
+  bottom: 20px;
 }
 
 .namePlat {
@@ -372,7 +374,7 @@ main .pixContainer {
 }
 
 button {
-  width: 35%;
+  width: 43%;
   color: white;
   font-size: 10px;
   background: linear-gradient(20deg, #FF79DA, #9356DC);
@@ -468,6 +470,10 @@ aside .accompagnement {
   opacity: 0;
   position: relative;
   bottom: 50%;
+  color: #9356DC;
+}
+.cont-heart i {
+  font-size: 25px;
 }
 .cont-heart:hover .heart-0 {
   opacity: 0;
@@ -541,18 +547,10 @@ aside .accompagnement {
     width: 32.5%;
     margin: 5px;
   }
-
-  .positionBottom {
-    position: unset;
-  }
 }
 @media screen and (max-width: 999px) {
   .btn-valid-cmd {
-    position: absolute;
-    top: 170%;
-    z-index: 1;
     font-size: 1rem;
-    right: 32%;
   }
 }
 @keyframes OnLoad {
