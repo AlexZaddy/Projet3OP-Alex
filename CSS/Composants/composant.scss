@@ -45,11 +45,12 @@
     }
 
     &:hover .checked {
-        width: 10vh;
+        width: 30%;
         transition: 1s;
     }
 
     &:hover .logoCheck {
+        width: 24px;
         transform: rotate(360deg);
         position: relative;
         left: 0px;
@@ -125,7 +126,14 @@ button {
     margin-bottom: 7%;
     box-shadow: #383838 0px 3px 6px 0px;
     font-weight: bolder;
-    font-size: 12px;
+    transition: 500ms;
+    font-size: 2vh;
+
+    &:hover {
+        box-shadow: #383838 0px 6px 12px 0px;
+        background: linear-gradient(80deg, $rose, $violet);
+        transition: 500ms;
+    }
 }
 
 .btn-valid-cmd {
@@ -200,49 +208,58 @@ aside {
 
     .namePlat,
     .accompagnement {
-        text-overflow: ellipsis;
         width: 85%;
         display: inline-block;
         white-space: nowrap;
-
         text-overflow: ellipsis;
         overflow: hidden;
         transition: 200ms;
     }
 
-
 }
 
 
-.test {
+.global-h {
     animation: 1s ease-out 0s 1 OnLoad;
-    width: 50px;
-    background-color: red;
+    position: relative;
+    left: -19px;
 }
 
 .cont-heart {
+
     .heart-1 {
-        opacity: 0;
-        position: relative;
-        bottom: 50%;
-        color: $violet;
+        position: absolute;
+        top: 3px;
+        //color:$violet;
+        background: -webkit-linear-gradient(-90deg, #9356dc, #ff79da);
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        color: transparent;
+        right: -13px;
+    }
+
+    .heart-0 {
+        position: absolute;
+        top: 3px;
+        z-index: 1;
+        background-color: white;
+        right: -13px;
     }
 
     i {
         font-size: 25px;
     }
 
-    &:hover .heart-0 {
+    /* &:hover .heart-0 {
         opacity: 0;
         transition: 200ms;
-    }
+    }*/
 
-    &:hover .heart-1 {
+    .heart-0:hover {
         transition: 200ms;
-        opacity: 1;
+        opacity: 0;
     }
 }
-
 
 .lds-ring {
     display: inline-block;
@@ -261,10 +278,10 @@ aside {
     width: 164px;
     height: 164px;
     margin: 8px;
-    border: 16px solid rgb(0, 0, 0);
+    border: 16px solid $violet;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: rgb(0, 0, 0) transparent transparent transparent;
+    border-color: $violet transparent transparent transparent;
 
 }
 

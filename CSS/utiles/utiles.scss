@@ -68,6 +68,12 @@ h4 {
     margin: 5%;
 }
 
+.Bordur {
+    border: #99E2D0 1px solid;
+    width: 12px;
+
+}
+
 hr {
     width: 5%;
     float: inline-start;
@@ -134,6 +140,10 @@ a:hover,
 a:visited,
 a:link {
     color: black;
+}
+
+.absolute {
+    position: absolute;
 }
 
 header,
