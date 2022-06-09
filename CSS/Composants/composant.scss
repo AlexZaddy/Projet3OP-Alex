@@ -8,7 +8,7 @@
 
     &:hover {
         border-radius: 11px 0px 0px 11px;
-        //width: 50vh;
+        width: 77%;
         transition: 1s;
         cursor: pointer;
     }
@@ -19,7 +19,6 @@
     }
 
     &:hover .accompagnement {
-        // width: 27vh;
         transition: 300ms;
     }
 
@@ -45,27 +44,28 @@
     }
 
     &:hover .checked {
-        width: 30%;
+        width: 18%;
         transition: 1s;
     }
 
     &:hover .logoCheck {
-        width: 24px;
+        width: 20px;
         transform: rotate(360deg);
         position: relative;
-        left: 0px;
+        left: -7px;
         transition: 1s;
     }
 
 }
 
 .logoCheck {
-    padding: 5px;
+    padding: 6px 8px;
     background-color: white;
     border-radius: 25px;
-    margin: 1.7vh;
+    margin: 14px;
     position: relative;
-    left: 76px;
+    left: 17px;
+    width: 20px;
 
     i {
         color: $vert;
@@ -297,7 +297,7 @@ aside {
     animation-delay: -0.15s;
 }
 
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 1000px) {
 
     .container-all-menu {
         display: flex;
@@ -331,7 +331,7 @@ aside {
 
 }
 
-@media screen and (max-width:999px) {
+@media screen and (max-width:1000px) {
     .btn-valid-cmd {
         font-size: 1rem;
     }

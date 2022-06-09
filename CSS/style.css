@@ -136,6 +136,10 @@ a:link {
   position: absolute;
 }
 
+.Whover :hover {
+  width: 70%;
+}
+
 header,
 section,
 .pixContainer,
@@ -292,6 +296,7 @@ img {
 }
 .menuContainer:hover {
   border-radius: 11px 0px 0px 11px;
+  width: 77%;
   transition: 1s;
   cursor: pointer;
 }
@@ -320,24 +325,25 @@ img {
   transition: 1s;
 }
 .containerInfo:hover .checked {
-  width: 30%;
+  width: 18%;
   transition: 1s;
 }
 .containerInfo:hover .logoCheck {
-  width: 24px;
+  width: 20px;
   transform: rotate(360deg);
   position: relative;
-  left: 0px;
+  left: -7px;
   transition: 1s;
 }
 
 .logoCheck {
-  padding: 5px;
+  padding: 6px 8px;
   background-color: white;
   border-radius: 25px;
-  margin: 1.7vh;
+  margin: 14px;
   position: relative;
-  left: 76px;
+  left: 17px;
+  width: 20px;
 }
 .logoCheck i {
   color: #99E2D0;
@@ -546,7 +552,7 @@ aside .accompagnement {
   animation-delay: -0.15s;
 }
 
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 1000px) {
   .container-all-menu {
     display: flex;
     width: 99%;
@@ -576,7 +582,7 @@ aside .accompagnement {
     margin: 5px;
   }
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
   .btn-valid-cmd {
     font-size: 1rem;
   }
