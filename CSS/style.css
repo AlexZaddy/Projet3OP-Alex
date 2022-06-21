@@ -101,7 +101,7 @@ hr {
 }
 
 .cont-img {
-  height: 265px;
+  height: 25vh;
 }
 
 .Shrikhand {
@@ -501,6 +501,7 @@ aside .accompagnement {
   -webkit-background-clip: text;
   color: transparent;
   right: -13px;
+  transition: 500ms;
 }
 .cont-heart .heart-0 {
   position: absolute;
@@ -513,18 +514,18 @@ aside .accompagnement {
   font-size: 25px;
 }
 .cont-heart .heart-0:hover {
-  transition: 200ms;
+  transition: 400ms;
   opacity: 0;
 }
 
 .lds-ring {
   display: inline-block;
   position: absolute;
-  bottom: 60%;
-  left: 45%;
+  bottom: 70%;
   width: 180px;
   height: 180px;
   z-index: 1;
+  margin: 0 42%;
 }
 
 .lds-ring div {
@@ -585,6 +586,15 @@ aside .accompagnement {
 @media screen and (max-width: 1000px) {
   .btn-valid-cmd {
     font-size: 1rem;
+  }
+
+  .lds-ring {
+    margin: 0 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .lds-ring {
+    margin: 0px 28%;
   }
 }
 @keyframes OnLoad {
